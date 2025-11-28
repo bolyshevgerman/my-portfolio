@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Большев Герман</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 0;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 20px 0;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar">ГБ</div>
+            <h1>Большев Герман Владимирович</h1>
+            <p class="subtitle">Студент РТУ им. А.Н. Косыгина | Группа ИТВТ-24</p>
+            <p>Веб-технологии • Компьютерные сети • Разработка</p>
+        </header>
+
+        <section class="section">
+            <h2>📚 Обо мне</h2>
+            <p>Я студент направления "Информационные технологии и вычислительная техника". 
+               Увлекаюсь веб-разработкой, сетевыми технологиями и современными IT-трендами. 
+               В данный момент изучаю фронтенд-разработку и основы бэкенда.</p>
+        </section>
+
+        <section class="section">
+            <h2>💻 Профессиональные навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, Адаптивная верстка</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <p>Основы Node.js, Базы данных, REST API</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Инструменты</h3>
+                    <p>Git & GitHub, VS Code, Terminal, Figma</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Сети</h3>
+                    <p>DNS, HTTP/HTTPS, Доменные имена, Хостинг</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎓 Образование</h2>
+            <div class="skill-card">
+                <h3>РТУ им. А.Н. Косыгина</h3>
+                <p><strong>Направление:</strong> Информационные технологии и дизайн</p>
+                <p><strong>Группа:</strong> ИТВТ-424</p>
+                <p><strong>Год окончания:</strong> 2028</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📞 Контакты</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong> bolyshevgerman@gmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong> Bolyshevgerman
+                </div>
+                <div class="contact-item">
+                    <strong>Телефон:</strong> +7 (958) 818-45-82
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Лабораторная работа по веб-технологиям | РТУ им. А.Н. Косыгина</p>
+        </footer>
+    </div>
+</body>
+</html>
